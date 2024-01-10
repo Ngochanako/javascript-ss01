@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 6;
+        let result = ++a + a + a++ + ++a + a;
+        
+        // ++a: gia tri cua a được tăng lên 1 rồi mới thực hiện tính toán cho result
+        //a++: thực hiện toán tử gán trước rồi mới tăng giá trị a lên 1
+        // ++a +a: tăng giá trị của a lên 7 --> kết quả là 14
+        // ++a + a + a++: cho kết quả là 21 sau đó tăng giá trị của a lên 8
+        //++a + a + a++ + ++a: tăng giá trị của a lên 9--> cho kết quả 30
+        //++a + a + a++ + ++a + a: kết quả là 39
+    </script>
+</body>
+</html>
